@@ -1,1 +1,1 @@
-# java0
+# Java MOOC Helsinki (week 10 onwards)
