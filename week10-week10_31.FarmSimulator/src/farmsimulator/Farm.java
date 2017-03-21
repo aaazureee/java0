@@ -53,12 +53,11 @@ public class Farm implements Alive {
         }
 
         if (this.cowList.size() == 0) {
-            return "Farm owner: " + this.name + "\n" + "Barn bulk tank: " + Math.ceil(this.barn.getBulkTank().getVolume()) + "/" + Math.ceil(this.barn.getBulkTank().getCapacity())
-                    + "\n" + "No cows.";
+            return "Farm owner: " + this.name + "\n" + this.barn + "\n" + "No cows.";
 
         } else {
-            return "Farm owner: " + this.name + "\n" + "Barn bulk tank: " + Math.ceil(this.barn.getBulkTank().getVolume()) + "/" + Math.ceil(this.barn.getBulkTank().getCapacity()) + "\n"
-                    + "Animals: " + cowPrint;
+            return "Farm owner: " + this.name + "\n" + "Barn bulk tank: " + this.barn + "\n" + "Animals: " + cowPrint;
+
         }
 
     }
